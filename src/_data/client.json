@@ -1,8 +1,8 @@
 {
-  "name": "Oak Harbor Web Designs",
-  "email": "hello@oakharbor.com",
-  "phone": "555-779-4407",
-  "phoneFormatted": "(555) 779-4407",
+  "name": "KLG Transportation",
+  "email": "logistics@klgtransportation.org",
+  "phone": "800-944-0519",
+  "phoneFormatted": "(800) 944-0519",
   "address": {
     "lineOne": "First Address Line",
     "lineTwo": "Second Address Line, If Needed",
@@ -11,5 +11,5 @@
     "postcode": "80206",
     "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
   },
-  "domain": "www.website.com"
+  "domain": "www.klgtransportation.org"
 }
