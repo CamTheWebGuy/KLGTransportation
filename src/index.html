@@ -1,0 +1,514 @@
+---
+layout: "base.html"
+description: "Meta description for the page"
+metaTitle: "Title that shows up on google searches"
+tagTitle: "Pixel Perfect Websites"
+preloadImg: "/images/landing-1920w.webp"
+preloadCSS: "/css/local.css"
+permalink: "/"
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+<!-- Enter html code below -->
+
+<!-- Usage Notes:
+We made this stitch to overlap the section below it, so if there's a patterned texture or image background on the next section below, it will overlap on top of it. Other Stitches like this would have a white gap between the cards and the next section. In order to make Stitches like this work, we need to add a padding top on the section below it to counteract the overlap. Here's the padding top you need to add to the section below this one and all the breakpoints to add them so this design will work with whatever comes after it:
+
+ON MOBILE (360px): add padding-top: (520/16rem); using LESS, or padding-top: calc(520 / 16 * 1rem); if you're using SCSS, or padding-top: 32.5rem; if you're just using vanilla CSS.
+
+ON TABLET (768px): Reset to padding-top: (280/16rem); using LESS, padding-top: calc(280 / 16 * 1rem) for SCSS or padding-top: 17.5rem; for CSS.
+
+Doing this will complete the overlapping "breaking the container" look.
+-->
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-1298">
+  <div class="cs-container">
+    <div class="cs-content">
+      <h1 class="cs-title">Delivering Excellence in Every Mile</h1>
+      <p class="cs-text">
+        From Local Deliveries to Long Haul Shipments, We've Got You Covered
+      </p>
+      <a href="" class="cs-button-solid">Get Started</a>
+    </div>
+  </div>
+  <div class="cs-container">
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/brain.svg"
+            loading="lazy"
+            decoding="async"
+            alt="icon"
+            width="40"
+            height="40"
+            aria-hidden="true"
+          />
+          <h3 class="cs-h3">On Time Delivery</h3>
+          <p class="cs-item-text">
+            Trust us to handle your deliveries with speed and precision, because
+            when it comes to your time, every second counts.
+          </p>
+        </a>
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/users.svg"
+            loading="lazy"
+            decoding="async"
+            alt="icon"
+            width="40"
+            height="40"
+            aria-hidden="true"
+          />
+          <h3 class="cs-h3">Fully Insured</h3>
+          <p class="cs-item-text">
+            From the moment your package leaves your hands to the minute it
+            reaches its destination, rest assured it is fully protected.
+          </p>
+        </a>
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Layer.svg"
+            loading="lazy"
+            decoding="async"
+            alt="icon"
+            width="40"
+            height="40"
+            aria-hidden="true"
+          />
+          <h3 class="cs-h3">Door To Door Service</h3>
+          <p class="cs-item-text">
+            Our dedicated team ensures your package is delivered safely and
+            directly to your door, making shipping simpler than ever.
+          </p>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!--Background Image, background image added in CSS at 1600px wide for parallax effect-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source media="(max-width: 1023px)" srcset="./assets/images/1024Hero.jpg" />
+    <!--Tablet and above Image-->
+    <source media="(min-width: 1024px)" srcset="./assets/images/1280Hero.jpg" />
+    <img
+      loading="lazy"
+      decoding="async"
+      src="./assets/images/1280Hero.jpg"
+      alt="buildings"
+      width="1280"
+      height="568"
+    />
+  </picture>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="sbsr-1592">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <!--Top left image-->
+      <picture class="cs-picture cs-picture1">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="./assets/images/Truck.jpg"
+        />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="./assets/images/Truck.jpg"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="./assets/images/Truck.jpg"
+          alt="mechanic"
+          width="413"
+          height="500"
+        />
+      </picture>
+      <!--Top Right image-->
+      <picture class="cs-picture cs-picture2">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="./assets/images/van.jpg"
+        />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="./assets/images/van.jpg"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="./assets/images/van.jpg"
+          alt="Van"
+          width="413"
+          height="280"
+        />
+      </picture>
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">About us</span>
+      <h2 class="cs-title">ABOUT KLG TRANSPORTATION</h2>
+      <p class="cs-text">
+        At KLG TRANSPORTATION, we specialize in providing top-tier shipping and
+        trucking services designed to meet the diverse needs of our clients.
+        With a commitment to excellence and customer satisfaction, we leverage
+        our extensive industry experience and a dedicated team to offer
+        reliable, cost-effective transportation solutions. </br></br>Our fleet includes
+        sprinter vans and box trucks, enabling us to handle a wide range of
+        cargo types and sizes. Whether it’s local deliveries or long haul
+        shipments, we ensure your goods are transported safely and on time. Our
+        professional approach and attention to detail set us apart, making us a
+        trusted partner for businesses in commerce, manufacturing, logistics,
+        and beyond.
+      </p>
+      <a href="" class="cs-button-solid">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="services-1646">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Our Services</span>
+      <h2 class="cs-title">What We Provide To Our Customer</h2>
+      <p class="cs-text">
+        We offer a comprehensive range of delivery solutions to meet all your logistical needs
+      </p>
+      <a href="" class="cs-button-solid">Get Started</a>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/checkmark-circle-gold.svg"
+          loading="lazy"
+          decoding="async"
+          alt="icon"
+          width="48"
+          height="48"
+          aria-hidden="true"
+        />
+        <!-- Text Grouped For Flexbox-->
+        <div class="cs-text-group">
+          <h3 class="cs-h3">Local Deliveries</h3>
+          <p class="cs-item-text">
+            Efficient and reliable local delivery services for businesses and individuals.
+          </p>
+        </div>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/dashboard-gold.svg"
+          loading="lazy"
+          decoding="async"
+          alt="icon"
+          width="48"
+          height="48"
+          aria-hidden="true"
+        />
+        <!-- Text Grouped For Flexbox-->
+        <div class="cs-text-group">
+          <h3 class="cs-h3">Long Haul Shipments</h3>
+          <p class="cs-item-text">
+            Comprehensive long-distance shipping solutions for interstate and cross-country deliveries.
+          </p>
+        </div>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Lifebuoy-gold.svg"
+          loading="lazy"
+          decoding="async"
+          alt="icon"
+          width="48"
+          height="48"
+          aria-hidden="true"
+        />
+        <!-- Text Grouped For Flexbox-->
+        <div class="cs-text-group">
+          <h3 class="cs-h3">Same Day Freight</h3>
+          <p class="cs-item-text">
+            Why settle for waiting overnight or longer when you can have your packages delivered within the same day?
+          </p>
+        </div>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like-gold.svg"
+          loading="lazy"
+          decoding="async"
+          alt="icon"
+          width="48"
+          height="48"
+          aria-hidden="true"
+        />
+        <!-- Text Grouped For Flexbox-->
+        <div class="cs-text-group">
+          <h3 class="cs-h3">Legal Courier Services</h3>
+          <p class="cs-item-text">
+            Maintain order over your casework and beat your legal deadlines with our quick and reliable legal courier services.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-286">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Best-in-class</span>
+      <h2 class="cs-title">What They Say</h2>
+      <p class="cs-text">
+        Discover why our customers trust KLG Transportation for all their delivery needs
+      </p>
+      <a aria-label="read more reviews" href="" class="cs-button-solid"
+        >Read More</a
+      >
+    </div>
+    <ul class="cs-card-group">
+      <!-- Review 1 -->
+      <li class="cs-item">
+        <img
+          class="cs-item-img"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
+          alt="profile picture"
+          width="80"
+          height="80"
+        />
+        <p class="cs-item-text">
+          Exceptional service every time! KLG has never let us down.
+        </p>
+        <span class="cs-reviewer">
+          Jon Doe
+          <span class="cs-desc">Company</span>
+        </span>
+        <img
+          class="cs-item-stars"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+          alt="stars"
+          width="96"
+          height="16"
+        />
+      </li>
+      <!-- Review 2 -->
+      <li class="cs-item">
+        <img
+          class="cs-item-img"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
+          alt="profile picture"
+          width="80"
+          height="80"
+        />
+        <p class="cs-item-text">
+          We've used both their box truck and sprinter van services and are impressed by the efficiency and care provided. Highly recommend!
+        </p>
+        <span class="cs-reviewer">
+          Jane Doe
+          <span class="cs-desc">Company</span>
+        </span>
+        <img
+          class="cs-item-stars"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+          alt="stars"
+          width="96"
+          height="16"
+        />
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-1333">
+  <div class="cs-container">
+    <!--Form-->
+    <form class="cs-form" id="cs-form-1333" name="Contact Form" method="post">
+      <div class="cs-content">
+        <span class="cs-topper">Contact Us</span>
+        <h2 class="cs-title">Request a Estimate</h2>
+      </div>
+      <label class="cs-label">
+        Name
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="name-1333"
+          name="name"
+          placeholder="Name"
+        />
+      </label>
+      <label class="cs-label cs-email">
+        Email
+        <input
+          class="cs-input"
+          required
+          type="email"
+          id="email-1333"
+          name="email"
+          placeholder="Email"
+        />
+      </label>
+      <label class="cs-label cs-phone">
+        Phone
+        <input
+          class="cs-input"
+          required
+          type="number"
+          id="phone-1333"
+          name="phone"
+          placeholder="Phone"
+        />
+      </label>
+
+      <label class="cs-label cs-ozip">
+        Origin Zip
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="ozip-1333"
+          name="Origin Zip"
+          placeholder="92557"
+        />
+      </label>
+
+      <label class="cs-label cs-dzip">
+        Destination Zip
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="dzip-1333"
+          name="Destination Zip"
+          placeholder="78258"
+        />
+      </label>
+      <label class="cs-label cs-weight">
+        Approximate Weight
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="weight-1333"
+          name="Approximate Weight"
+          placeholder="16lbs"
+        />
+      </label>
+      <label class="cs-label cs-shipment">
+        Shipment Type
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="shipment-1333"
+          name="Shipment Type"
+          placeholder="Long Haul"
+        />
+      </label>
+    
+      <button class="cs-button-solid cs-submit" type="submit">
+        Get Estimate
+      </button>
+    </form>
+    <div class="cs-content">
+      <span class="cs-topper">Asked Questions</span>
+      <h2 class="cs-title">Frequently Asked Questions</h2>
+      <ul class="cs-faq-group">
+        <!-- Active class added as default -->
+        <li class="cs-faq-item active">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              How much will shipping cost me?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            It depends on the kind of shipment, distance and weight of the shipment. The best way to get an accurate answer is to use the "Request a Estimate" form.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              How long will it take for my shipment to arrive?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            THIS IS PLACEHOLDER CONTENT THAT NEEDS TO BE REPLACED
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              Will my shipment be safe throughout the shipment process?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            THIS IS PLACEHOLDER CONTENT THAT NEEDS TO BE REPLACED
+          </p>
+        </li>
+   
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
