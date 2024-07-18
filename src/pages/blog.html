@@ -1,0 +1,322 @@
+---
+layout: "base.html"
+description: "Meta description for the page"
+metaTitle: "Blog"
+tagTitle: "Blog | {{ client.name }}"
+preloadImg: "/images/imageName.format"
+preloadCSS: "/css/blog.css"
+permalink: "blog/"
+eleventyNavigation:
+  key: Blog
+  order: 1000
+---
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+  <div class="cs-container">
+    <span class="cs-int-title">Blog</span>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source media="(max-width: 600px)" srcset="../assets/images/1280Hero.jpg" />
+    <!--Tablet and above Image-->
+    <source media="(min-width: 601px)" srcset="../assets/images/1280Hero.jpg" />
+    <img
+      loading="lazy"
+      decoding="async"
+      src="../assets/images/1280Hero.jpg"
+      alt="pills"
+      width="1280"
+      height="568"
+      aria-hidden="true"
+    />
+  </picture>
+</div>
+<!-- ============================================ -->
+<!--                     Blog                     -->
+<!-- ============================================ -->
+
+<section id="blog-1736">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Blog</span>
+      <h2 class="cs-title">Our Recent Post</h2>
+    </div>
+    {% if collections.post | length == 0 %}
+    <h1>No Recent Posts</h1>
+    {% endif %}
+
+    <ul class="cs-card-group">
+      {%- for post in collections.post | reverse -%}
+      <li class="cs-item">
+        <picture class="cs-picture" aria-hidden="true">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+            {{ post.data.image }}
+            "
+          />
+          <source
+            media="(min-width: 602px)"
+            srcset="
+            {{ post.data.image }}
+            "
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="{{ post.data.image }}"
+            alt="people"
+            width="305"
+            height="180"
+          />
+        </picture>
+        <span class="cs-date">{{ post.date | postDate }}</span>
+        <div class="cs-info">
+          <span class="cs-time"> {{ post.category }} </span>
+          <h3 class="cs-h3">{{ post.data.blogTitle }}</h3>
+          <a href="{{ post.url }}" class="cs-link">
+            Read More
+            <img
+              class="cs-arrow"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/event-chevron.svg"
+              alt="icon"
+              width="20"
+              height="20"
+              aria-hidden="true"
+            />
+          </a>
+        </div>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-286">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Best-in-class</span>
+      <h2 class="cs-title">What They Say</h2>
+      <p class="cs-text">
+        Discover why our customers trust KLG Transportation for all their
+        delivery needs
+      </p>
+      <a aria-label="read more reviews" href="" class="cs-button-solid"
+        >Read More</a
+      >
+    </div>
+    <ul class="cs-card-group">
+      <!-- Review 1 -->
+      <li class="cs-item">
+        <img
+          class="cs-item-img"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
+          alt="profile picture"
+          width="80"
+          height="80"
+        />
+        <p class="cs-item-text">
+          Exceptional service every time! KLG has never let us down.
+        </p>
+        <span class="cs-reviewer">
+          Jon Doe
+          <span class="cs-desc">Company</span>
+        </span>
+        <img
+          class="cs-item-stars"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+          alt="stars"
+          width="96"
+          height="16"
+        />
+      </li>
+      <!-- Review 2 -->
+      <li class="cs-item">
+        <img
+          class="cs-item-img"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
+          alt="profile picture"
+          width="80"
+          height="80"
+        />
+        <p class="cs-item-text">
+          We've used both their box truck and sprinter van services and are
+          impressed by the efficiency and care provided. Highly recommend!
+        </p>
+        <span class="cs-reviewer">
+          Jane Doe
+          <span class="cs-desc">Company</span>
+        </span>
+        <img
+          class="cs-item-stars"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+          alt="stars"
+          width="96"
+          height="16"
+        />
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-1333">
+  <div class="cs-container">
+    <!--Form-->
+    <form class="cs-form" id="cs-form-1333" name="Contact Form" method="post">
+      <div class="cs-content">
+        <span class="cs-topper">Contact Us</span>
+        <h2 class="cs-title">Request a Estimate</h2>
+      </div>
+      <label class="cs-label">
+        Name
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="name-1333"
+          name="name"
+          placeholder="Name"
+        />
+      </label>
+      <label class="cs-label cs-email">
+        Email
+        <input
+          class="cs-input"
+          required
+          type="email"
+          id="email-1333"
+          name="email"
+          placeholder="Email"
+        />
+      </label>
+      <label class="cs-label cs-phone">
+        Phone
+        <input
+          class="cs-input"
+          required
+          type="number"
+          id="phone-1333"
+          name="phone"
+          placeholder="Phone"
+        />
+      </label>
+
+      <label class="cs-label cs-ozip">
+        Origin Zip
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="ozip-1333"
+          name="Origin Zip"
+          placeholder="92557"
+        />
+      </label>
+
+      <label class="cs-label cs-dzip">
+        Destination Zip
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="dzip-1333"
+          name="Destination Zip"
+          placeholder="78258"
+        />
+      </label>
+      <label class="cs-label cs-weight">
+        Approximate Weight
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="weight-1333"
+          name="Approximate Weight"
+          placeholder="16lbs"
+        />
+      </label>
+      <label class="cs-label cs-shipment">
+        Shipment Type
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="shipment-1333"
+          name="Shipment Type"
+          placeholder="Long Haul"
+        />
+      </label>
+
+      <button class="cs-button-solid cs-submit" type="submit">
+        Get Estimate
+      </button>
+    </form>
+    <div class="cs-content">
+      <span class="cs-topper">Asked Questions</span>
+      <h2 class="cs-title">Frequently Asked Questions</h2>
+      <ul class="cs-faq-group">
+        <!-- Active class added as default -->
+        <li class="cs-faq-item active">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              How much will shipping cost me?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            It depends on the kind of shipment, distance and weight of the
+            shipment. The best way to get an accurate answer is to use the
+            "Request a Estimate" form.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              How long will it take for my shipment to arrive?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            THIS IS PLACEHOLDER CONTENT THAT NEEDS TO BE REPLACED
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              Will my shipment be safe throughout the shipment process?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            THIS IS PLACEHOLDER CONTENT THAT NEEDS TO BE REPLACED
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

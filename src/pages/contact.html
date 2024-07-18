@@ -1,0 +1,177 @@
+---
+layout: "base.html"
+description: "Meta description for the page"
+metaTitle: "Contact Us"
+tagTitle: "Contact Us | {{ client.name }}"
+preloadImg: "/images/imageName.format"
+preloadCSS: "/css/contact.css"
+permalink: "contact/"
+eleventyNavigation:
+  key: Contact Us
+  order: 1000
+---
+
+<!-- Enter html code below -->
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+  <div class="cs-container">
+    <span class="cs-int-title">Contact Us</span>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source media="(max-width: 600px)" srcset="../assets/images/1280Hero.jpg" />
+    <!--Tablet and above Image-->
+    <source media="(min-width: 601px)" srcset="../assets/images/1280Hero.jpg" />
+    <img
+      loading="lazy"
+      decoding="async"
+      src="../assets/images/1280Hero.jpg"
+      alt="pills"
+      width="1280"
+      height="568"
+      aria-hidden="true"
+    />
+  </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-1333">
+  <div class="cs-container">
+    <!--Form-->
+    <form class="cs-form" id="cs-form-1333" name="Contact Form" method="post">
+      <div class="cs-content">
+        <span class="cs-topper">Contact Us</span>
+        <h2 class="cs-title">Request a Estimate</h2>
+      </div>
+      <label class="cs-label">
+        Name
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="name-1333"
+          name="name"
+          placeholder="Name"
+        />
+      </label>
+      <label class="cs-label cs-email">
+        Email
+        <input
+          class="cs-input"
+          required
+          type="email"
+          id="email-1333"
+          name="email"
+          placeholder="Email"
+        />
+      </label>
+      <label class="cs-label cs-phone">
+        Phone
+        <input
+          class="cs-input"
+          required
+          type="number"
+          id="phone-1333"
+          name="phone"
+          placeholder="Phone"
+        />
+      </label>
+
+      <label class="cs-label cs-ozip">
+        Origin Zip
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="ozip-1333"
+          name="Origin Zip"
+          placeholder="92557"
+        />
+      </label>
+
+      <label class="cs-label cs-dzip">
+        Destination Zip
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="dzip-1333"
+          name="Destination Zip"
+          placeholder="78258"
+        />
+      </label>
+      <label class="cs-label cs-weight">
+        Approximate Weight
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="weight-1333"
+          name="Approximate Weight"
+          placeholder="16lbs"
+        />
+      </label>
+      <label class="cs-label cs-shipment">
+        Shipment Type
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="shipment-1333"
+          name="Shipment Type"
+          placeholder="Long Haul"
+        />
+      </label>
+
+      <button class="cs-button-solid cs-submit" type="submit">
+        Get Estimate
+      </button>
+    </form>
+    <div class="cs-content">
+      <span class="cs-topper">Asked Questions</span>
+      <h2 class="cs-title">Frequently Asked Questions</h2>
+      <ul class="cs-faq-group">
+        <!-- Active class added as default -->
+        <li class="cs-faq-item active">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              How much will shipping cost me?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            It depends on the kind of shipment, distance and weight of the
+            shipment. The best way to get an accurate answer is to use the
+            "Request a Estimate" form.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              How long will it take for my shipment to arrive?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            THIS IS PLACEHOLDER CONTENT THAT NEEDS TO BE REPLACED
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              Will my shipment be safe throughout the shipment process?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            THIS IS PLACEHOLDER CONTENT THAT NEEDS TO BE REPLACED
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
