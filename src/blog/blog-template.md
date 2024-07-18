@@ -1,7 +1,7 @@
 ---
 pageName: blog-template
-blogTitle: How Much Does a Solar Panel Installation Cost?
-titleTag: How Much Does a Solar Panel Installation Cost?
+blogTitle: How Much Does Shipping Cost?
+titleTag: How Much Does Shipping Cost?
 blogDescription: Curious about solar panel pricing? Find out everything you want
   to know about solar pricing from a transparent solar installation company.
 author: Joe Mendez
@@ -9,7 +9,7 @@ date: 2022-12-16T19:40:18.253Z
 tags:
   - post
   - featured
-image: /images/blog/landing.jpg
+image: https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 imageAlt: Kitchen
 category: News
 ---
